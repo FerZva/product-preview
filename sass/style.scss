@@ -1,0 +1,87 @@
+@use '_default';
+@use '_variables';
+
+body {
+    background-color: variables.$Cream;
+}
+
+main {
+    background-color: variables.$White;
+    border-radius: 5px;
+}
+
+.section-img-container {
+    width: 300px;
+    height: 450px;
+    background-image: variables.$Img-desktop;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.section-desc-container {
+    width: 300px;
+    padding: 32px;
+
+    &_first-title {
+        margin-bottom: 25px;
+        font-family: 'Montserrat', serif;
+        color: variables.$Dark-grayish-blue;
+        letter-spacing: 0.2rem;
+        font-size: 10px;
+    }
+
+    &_product-name {
+        margin-bottom: 32px;
+        font-family: 'Fraunces', serif;
+        
+    }
+
+    &_paraph {
+        color: variables.$Dark-grayish-blue;
+        margin-bottom: 35px;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    &_prices-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &_green-price {
+            color: variables.$Dark-cyan;
+            font-family: 'Fraunces', serif;
+        }
+
+        &_old-price {
+            margin-left: 20px;
+            font-family: 'Fraunces', serif;
+            color: variables.$Dark-grayish-blue;
+        }
+    }
+
+    &_btn {
+        margin: 0 auto;
+        width: 100%;
+        padding:10px;
+        border-radius: 5px;
+        border: none;
+        background-color: variables.$Dark-cyan;
+        color: variables.$White;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_icon {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            transition: 0.2s ease;
+            background-color: variables.$Active-btn-color;
+            cursor: pointer;
+        }
+    }
+}
