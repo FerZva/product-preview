@@ -35,6 +35,18 @@ body {
 main {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 680px;
+    width: 300px;
+    border-top-right-radius: 5px;
+  }
 }
 
 .section-img-container {
@@ -44,6 +56,14 @@ main {
   background-size: cover;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+@media screen and (max-width: 375px) {
+  .section-img-container {
+    background-image: url("../images/image-product-mobile.jpg");
+    height: 240px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 .section-desc-container {
@@ -101,6 +121,25 @@ main {
   transition: 0.2s ease;
   background-color: hsl(156, 42%, 18%);
   cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  .section-desc-container {
+    height: 240px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .attribution {
+    margin-top: 20px;
+  }
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */
